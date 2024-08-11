@@ -1,0 +1,11 @@
+--- 
+- name: playbook for copying
+  hosts: all
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+    - name: copy war file to tomcat server
+      copy:
+        src: #source of file
+        dest: #destination of file
