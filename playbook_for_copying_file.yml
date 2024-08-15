@@ -7,5 +7,5 @@
   tasks:
     - name: copy war file to tomcat server
       copy:
-        src: #source of file
-        dest: #destination of file
+        src: /home/ansible/mini/target/MiniShoppingwebsite.war
+        dest: /home/ansible/apache-tomcat-9.0.93/webapps 
